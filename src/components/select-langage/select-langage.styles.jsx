@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    position: relative;
+    width: 30px;
+`
+
 export const Logo = styled.div`
     position: relative;
-    width: auto;
-    height: 17px;
+    width: 25px;
+    height: auto;
+    margin-top: ${props => props.$marginTop};
     cursor: pointer;
+
     svg{
         width: 100%;
         height: 100%;
@@ -22,6 +29,9 @@ export const FlagsContainer = styled.div`
     z-index: 15;
 
     &.active{
-        top: 100%;
+        top: 90%;
+        @media screen and (max-width: 650px) {
+            top: 120%;
+        }
     }
 `

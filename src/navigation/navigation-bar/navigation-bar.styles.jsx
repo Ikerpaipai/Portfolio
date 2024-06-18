@@ -30,6 +30,10 @@ export const Navigation = styled.div`
             transform: translateY(0);
         }
     }
+
+    @media screen and (max-width: 650px) {
+        overflow: inherit;
+    }
 `
 
 export const RightSide = styled.div`
