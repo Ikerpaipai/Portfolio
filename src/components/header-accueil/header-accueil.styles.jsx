@@ -28,6 +28,9 @@ export const TitleContainer = styled.div`
     @media screen and (max-width: 600px) {
         width: 431px;
     }
+    @media screen and (max-width: 600px) {
+        width: 380px;
+    }
 `
 
 export const Title = styled.h1`
@@ -50,6 +53,9 @@ export const Title = styled.h1`
 
     @media screen and (max-width: 750px) {
         font-size: 28px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 26px;
     }
 `
 

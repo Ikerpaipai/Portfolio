@@ -116,4 +116,8 @@ export const ProjetContainer = styled.div`
         width: 100%;
         position: inherit;
     }
+
+    @media screen and (max-width: 450px) {
+        margin-bottom: ${props => props.$marginBottom};
+    }
 `

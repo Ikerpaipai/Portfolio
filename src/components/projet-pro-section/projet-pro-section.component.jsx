@@ -145,7 +145,7 @@ const ProjetProSection = () => {
                     <LeftLine ref={leftLineRef} $nightMode={isOn}>
                         <PulseCircle active={pulseActive.left} bottom left />
                     </LeftLine>
-                    <ProjetContainer className={classActive.project1 ? "active" : ""}>
+                    <ProjetContainer className={classActive.project1 ? "active" : ""} $marginBottom="50px">
                         <ProjetPro
                             title={t("projetPro.title1")}
                             info={t('projetPro.info1', { returnObjects: true })}

@@ -7,6 +7,8 @@ import { ModeContext } from "../../contexts/toggle-mode.context"
 import { useTranslation } from "react-i18next"
 import LuminousCursor from "../../components/cursor/cursor.composant"
 import LogoIker from "../../components/logo-iker/logo-iker.component"
+import LogoSVG from "../../components/logo-svg/logo-svg.component"
+import BurgerSVG from "../../assets/logo-divers/burger.svg?react"
 
 const NavigationBar = () => {
     const {t} = useTranslation("global")
@@ -55,7 +57,9 @@ const NavigationBar = () => {
                     <NavLink to="/" onClick={handleScrollShow}>{t("navigation.link1")}</NavLink>
                     <NavLink to="/about" onClick={handleScrollShow}>{t("navigation.link2")}</NavLink>
                     <NavLink to="/contact" onClick={handleScrollShow}>{t("navigation.link3")}</NavLink>
-                    <Burger src="#" onClick={handleToggleBurger}/>
+                    <Burger onClick={handleToggleBurger}>
+                        <LogoSVG LogoComponent={BurgerSVG} height="25px" stroke={isOn ? "#D7E4F8" : "#334155"} strokeWidth="2px" cursor />
+                    </Burger>
                     <SelectLangage />
                     <Toggle />
                 </RightSide>

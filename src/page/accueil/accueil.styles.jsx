@@ -83,6 +83,10 @@ export const BodyFirstPart = styled.div`
         z-index: -5;
         border-top: 1px solid #D7CAEF;
     }
+
+    @media screen and (max-width: 850px) {
+        min-height: 900px;
+    }
 `
 
 export const BodySecondPart = styled.div`

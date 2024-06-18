@@ -71,7 +71,7 @@ export const Separateur = styled.hr`
     }
 `
 
-export const Burger = styled.img`
+export const Burger = styled.div`
     display: none;
     @media screen and (max-width: 575px) {
         display: block;
