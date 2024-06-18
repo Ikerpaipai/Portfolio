@@ -1,0 +1,153 @@
+{
+    "accueil" : {
+        "header" : {
+            "title1": "Hola,",
+            "title2" : "Soy Iker,",
+            "title3" : "Programador Web",
+            "info": "Entusiasmado por el full-stack y especializado en la programación front-end",
+            "button": "Contactarme"
+        }
+    },
+    "choose-section" : {
+        "title1": "Servicios/Prestaciones",
+        "info1": "Soluciones a medida y adaptadas a las necesidades específicas de cada cliente",
+        "title2": "Proyectos Profesionales",
+        "info2": "Diversos desafíos superados con soluciones innovadoras a través de mis experiencias profesionales",
+        "title3": "Proyectos Personales",
+        "info3": "Explora y descubre mi universo de aprendizaje, que enriquece mis habilidades como programador"
+    },
+    "services": {
+        "title1": "Desarrollo de aplicaciones web:",
+        "info1": "Diseñar y crear aplicaciones web interactivas y dinámicas para satisfacer las necesidades específicas de los clientes. Esto se realiza mediante frameworks y bibliotecas apropiadas, prestando especial atención a la seguridad y la optimización del código",
+        "title2": "Desarrollo de API:",
+        "info2": "El desarrollo de API consiste en crear interfaces de programación de aplicaciones. Esto incluye la gestión de los datos intercambiados para permitir la comunicación entre diferentes partes de una aplicación o entre diferentes aplicaciones",
+        "title3": "Integración de bases de datos:",
+        "info3": "Implementar y gestionar bases de datos para almacenar y recuperar eficientemente los datos necesarios para las aplicaciones web",
+        "title4": "Pruebas:",
+        "info4": "Las pruebas son una práctica esencial en el desarrollo de aplicaciones. Consiste en verificar la conformidad y el buen funcionamiento del código mediante diferentes tipos de pruebas, como pruebas unitarias, pruebas de integración y pruebas automatizadas. El objetivo es detectar y corregir errores lo antes posible, para garantizar la calidad, la fiabilidad y la seguridad del software desarrollado"
+    },
+    "projetPro": {
+        "title1": "Acordeón Pigini",
+        "info1": [
+          "Aplicación de comercio electrónico desarrollada de A a Z que permite centralizar el trabajo con clientes particulares/profesionales.",
+          "Un espacio de administración gestiona la administración de usuarios y de la empresa internamente."
+        ],
+        "infoDetails1": [
+          "En esta página de artículo dinámica, encontrarás un sistema interactivo diseñado para personalizar tu experiencia de compra a través de una serie de opciones explicativas e intuitivas. Cada elección modifica en tiempo real el precio y el peso del producto. Los precios también se ajustan según el estado del usuario (particular/profesional).", "En la página del carrito dinámico, los usuarios particulares y profesionales se benefician de experiencias adaptadas a sus necesidades. Para los usuarios particulares, este carrito dinámico ofrece la posibilidad de solicitar información a varios revendedores. Con un solo clic, se envía un correo electrónico con los detalles de los productos. Los usuarios profesionales, por su parte, disponen de un carrito de compra que les permite finalizar sus pedidos directamente en la aplicación.", "En la página de favoritos, los usuarios pueden facilitar la gestión de sus intereses guardando los productos que les interesan. Además, esta página de favoritos incluye una tabla comparativa, donde cada artículo puede ser comparado en términos de características, precio y otras especificaciones. Gracias a esta presentación clara y organizada, el usuario puede tomar decisiones de compra que se ajusten a sus necesidades.", "El tablero de administración ofrece una vista general completa para la gestión de la empresa. Desde este espacio centralizado, los administradores pueden monitorear las notificaciones y gestionar eficientemente toda la información como la gestión de usuarios (añadir, modificar, eliminar cuentas y definir los roles de cada uno), el seguimiento de compras y solicitudes de información de particulares/profesionales, la contabilidad comparando los datos con los de años anteriores, la mensajería y un calendario a disposición.", "La sección de análisis ofrece una interfaz gráfica interactiva realizada por Chart.js para una visualización clara y dinámica de los datos. Estos análisis están diseñados para simplificar la contabilidad de la empresa y proporcionar una visión general comparando datos como el volumen de negocios y las comisiones entre diferentes años."
+      ],
+        "title2": "ClicMusic",
+        "info2": [
+          "Web de comercio electrónico desarrollada de A a Z sin código a partir de un SaaS.",
+          "Implementación de SEO, actualización de artículos, herramientas de análisis."
+        ],
+        "infoDetails2": [
+          "Web de comercio electrónico desarrollada de A a Z sin código a partir de un SaaS. Implementación de SEO, actualización de artículos, herramientas de análisis."
+        ]
+      },
+      "projetPerso": {
+        "title": "Área de",
+        "titleSpan": "Entrenamiento",
+        "subTitle": "Experiencias digitales intuitivas explorando una diversidad de herramientas y lenguajes",
+        "card": {
+          "title1": "Crown Clothing",
+          "smallInfo1": "Comercio electrónico con Stripe",
+          "info1": "Este sitio de comercio electrónico está conectado a Firebase, que aloja una base de datos y configura una autenticación robusta. El sitio también tiene un modo de pago a través de la solución de API de prueba de Stripe.",
+          "title2": "Blog",
+          "smallInfo2": "Entrenamiento de API-REST",
+          "info2": "Este blog utiliza una API REST con rutas GET, POST, PUT y DELETE a través de Express para gestionar de manera dinámica los artículos y los comentarios.",
+          "title3": "Detector de rostros",
+          "smallInfo3": "Entrenamiento con Clarifai",
+          "info3": "Esta página utiliza la API de Clarifai para detectar automáticamente los rostros en las imágenes cargadas. Se implementó una versión simplificada de autenticación.",
+          "title4": "Viaje a Kyoto",
+          "smallInfo4": "Entrenamiento página de inicio",
+          "info4": "Mi primer sitio de entrenamiento responsive para computadoras, tabletas y teléfonos inteligentes."
+        }
+      },
+      "about": {
+        "header": {
+          "title1": "Un placer conocerte,",
+          "title2": "Soy Iker Paillet",
+          "paragrapheSpan1": "Apasionado",
+          "paragraphe1": " por el desarrollo front-end, tengo una carrera profesional rica y diversificada. Con un título francés en diseño industrial (Bac +3), empecé mi carrera en una empresa aeronáutica donde trabajé durante dos años. Esta experiencia me permitió adquirir habilidades en diseño técnico y ",
+          "paragrapheSpan2": "modelado 3D",
+          "paragraphe2": "Después de este período, tuve la oportunidad de descubrir el mundo de la música convirtiéndome en lutier de acordeones. Este oficio artesanal requiere desarrollar una atención a los ",
+          "paragrapheSpan3": "detalles",
+          "paragraphe3": ", ",
+          "paragrapheSpan4": "paciencia",
+          "paragraphe4": " y capacidad para resolver problemas complejos de manera ",
+          "paragrapheSpan5": "creativa",
+          "paragraphe5": "Sin embargo, mi interés por la digitalización y las tecnologías digitales siempre persistió, llevándome a aprender de manera ",
+          "paragrapheSpan6": "autodidacta",
+          "paragraphe6": " a desarrollar aplicaciones en diversos lenguajes de programación. Para poder desplegarlas, me formé en desarrollo ",
+          "paragrapheSpan7": "front-end",
+          "paragraphe7": " y ",
+          "paragrapheSpan8": "back-end",
+          "paragraphe8": ", aunque mi especialidad es el front-end.",
+          "paragraphe9": "Hoy en día, busco enfrentar nuevos desafíos como desarrollador. Mi trayectoria única me permite aportar ",
+          "paragrapheSpan9": "ideas innovadoras",
+          "paragraphe10": " y un enfoque riguroso a cada proyecto. Estoy entusiasmado de contribuir a ",
+          "paragrapheSpan10": "proyectos estimulantes",
+          "paragraphe11": " y continuar evolucionando en este campo dinámico y en ",
+          "paragrapheSpan11": "constante evolución",
+          "discover-me": "Puedes encontrarme aquí:",
+          "experiences": " años de experiencia"
+        },
+        "competences": {
+          "title": "Áreas de competencia :",
+          "title1": "Creación de interfaces de usuario dinámicas",
+          "title2": "Prototipado y diseño",
+          "title3": "Diseño responsive",
+          "title4": "Realización de pruebas unitarias",
+          "title5": "Desarrollo y gestión de servidores backend",
+          "title6": "Desarrollo de API RESTful",
+          "title7": "Gestión de versiones con Git",
+          "title8": "Manipulación del DOM",
+          "title9": "Optimización del rendimiento del Front-End",
+          "title10": "Optimización para motores de búsqueda",
+          "title11": "Desarrollo Full Stack",
+          "title12": "Uso y gestión de bases de datos",
+          "title13": "Seguridad y autenticación",
+          "title14": "Resolución de problemas y depuración"
+        },
+        "skill": {
+          "title": "Habilidades y conocimientos a adquirir :"
+        }
+      },
+      "navigation": {
+        "link1": "Inicio",
+        "link2": "Acerca de mí",
+        "link3": "Contacto"
+      },
+      "contact": {
+        "title": "CONTÁCTAME",
+        "subTitleSpan": "¿Interesado en trabajar juntos?",
+        "subTitle": " Complete el formulario a continuación con alguna información sobre su proyecto y le responderé lo antes posible. Por favor, espere unos días para que pueda responder.",
+        "form": {
+            "prenom": {
+                "placeholder": "Ingrese su nombre...",
+                "required": "Campo obligatorio",
+                "min": "2 caracteres mínimo",
+                "max": "10 caracteres máximo"
+            },
+            "nom": {
+                "placeholder": "Ingrese su apellido...",
+                "required": "Campo obligatorio",
+                "min": "2 caracteres mínimo",
+                "max": "10 caracteres máximo"
+            },
+            "email": {
+                "placeholder": "Ingrese su correo electrónico...",
+                "required": "Campo obligatorio",
+                "email": "Dirección de correo no válida"
+            },
+            "societe": {
+                "placeholder": "Ingrese su empresa... (opcional)"
+            },
+            "message": {
+                "placeholder": "Escriba su mensaje...",
+                "required": "Campo obligatorio",
+                "min": "10 caracteres mínimo"
+            }
+        }
+    }
+}
