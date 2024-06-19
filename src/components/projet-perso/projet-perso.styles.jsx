@@ -101,6 +101,7 @@ export const CardBack = styled(CardFront)`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 
     &::before{
         background-color: transparent;
@@ -124,7 +125,7 @@ export const BottomSection = styled.div`
     justify-content: space-between;
     opacity: 1;
 
-    .active{
+    &.active{
         opacity: 0;
     }
 `;

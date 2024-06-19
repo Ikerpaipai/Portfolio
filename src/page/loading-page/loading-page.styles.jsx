@@ -4,7 +4,7 @@ export const Body = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: ${props => props.$nightMode && "#1D2337"};
+    background: ${props => props.$nightMode ? "#1D2337" : "linear-gradient(#fff 30%, #F2EFFF)"};
     border-bottom: 1px solid #D7CAEF;
 
 
