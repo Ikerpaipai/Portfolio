@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: none;
     position: absolute;
-    right: ${(props)=>props.$right ? "-10px" : "none"};
-    bottom: ${(props)=>props.$bottom ? "-10px" : "none"};
-    left: ${(props)=>props.$left ? "-10px" : "none"};
-    width: 20px;
-    height: 20px;
+    right: ${(props)=>props.$right ? "-0.65vw" : "none"};
+    bottom: ${(props)=>props.$bottom ? "-0.65vw" : "none"};
+    left: ${(props)=>props.$left ? "-0.65vw" : "none"};
+    width: 1.2vw;
+    height: 1.2vw;
 
     &.active{
         display: block;
@@ -42,23 +42,31 @@ export const Container = styled.div`
     }
 
     @keyframes pulse-ring {
-    0% {
-        transform: scale(.33);
-    }
-    80%, 100% {
-        opacity: 0;
-    }
+        0% {
+            transform: scale(.33);
+        }
+        80%, 100% {
+            opacity: 0;
+        }
     }
 
     @keyframes pulse-dot {
-    0% {
-        transform: scale(.8);
+        0% {
+            transform: scale(.8);
+        }
+        50% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(.8);
+        }
     }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(.8);
-    }
+
+    @media screen and (max-width: 1450px) {
+        width: 20px;
+        height: 20px;
+        right: ${(props)=>props.$right ? "-10px" : "none"};
+        bottom: ${(props)=>props.$bottom ? "-10px" : "none"};
+        left: ${(props)=>props.$left ? "-10px" : "none"};
     }
 `

@@ -34,8 +34,8 @@ export const Body = styled.div`
 `
 
 export const Container = styled.div`
-    width: 500px;
-    height: 300px;
+    width: 50vw;
+    height: 30vw;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -49,6 +49,11 @@ export const Container = styled.div`
         to{
             opacity: 0;
         }
+    }
+
+    @media screen and (max-width: 1450px) {
+        width: 500px;
+        height: 300px;
     }
 `
 
@@ -66,18 +71,22 @@ export const BottomSection = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 60px;
+    font-size: 6vw;
     font-family: "Kaushan Script", cursive;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#334155"};
+
+    @media screen and (max-width: 1450px) {
+        font-size: 60px;
+    }
 `
 
 export const AnimationTopDiv = styled.div`
-    width: 290px;
+    width: 29vw;
     display: flex;
     align-items: center;
     justify-content: start;
-    column-gap: 30px;
-    animation: start 2s ease-in-out 0.5s forwards;
+    column-gap: 3vw;
+    animation: startHightScreen 2s ease-in-out 0.5s forwards;
     position: relative;
 
     &::after{
@@ -85,14 +94,35 @@ export const AnimationTopDiv = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        width: 250px;
+        width: 25vw;
         height: 100%;
         background: ${props => props.$nightMode ? "#1D2337" : "linear-gradient(#fff, #FCFCFF)"};
         clip-path: polygon(13% 0%, 100% 0, 100% 100%, 0% 100%);
     }
 
+    @media screen and (max-width: 1450px) {
+        width: 290px;
+        animation: start 2s ease-in-out 0.5s forwards;
+        column-gap: 30px;
+
+        &::after{
+        content: "";
+            position: absolute;
+            width: 250px;
+        }
+    }
+
     @media screen and (max-width: 500px) {
         animation: startResponsive 2s ease-in-out 0.5s forwards;
+    }
+
+    @keyframes startHightScreen {
+        from{
+            width: 29vw;
+        }
+        to{
+            width: 45vw;
+        }
     }
 
     @keyframes start {
@@ -114,12 +144,12 @@ export const AnimationTopDiv = styled.div`
     }
 `
 export const AnimationBottomDiv = styled.div`
-    width: 290px;
+    width: 29vw;
     display: flex;
     align-items: center;
     justify-content: end;
-    column-gap: 40px;
-    animation: start 2s ease-in-out 0.5s forwards;
+    column-gap: 4vw;
+    animation: startHightScreen 2s ease-in-out 0.5s forwards;
     position: relative;
 
     &::after{
@@ -127,10 +157,22 @@ export const AnimationBottomDiv = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 25vw;
         height: 100%;
         background: ${props => props.$nightMode ? "#1D2337" : "linear-gradient(#FCFCFF, #F7F5FF)"};
         clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+    }
+
+    @media screen and (max-width: 1450px) {
+        width: 290px;
+        animation: start 2s ease-in-out 0.5s forwards;
+        column-gap: 40px;
+
+        &::after{
+        content: "";
+            position: absolute;
+            width: 250px;
+        }
     }
 
     @media screen and (max-width: 500px) {
@@ -144,28 +186,4 @@ export const SlashContainer = styled.div`
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 9999;
-`
-
-export const WelcomeText = styled.span`
-    font-size: 60px;
-    font-weight: bold;
-    opacity: 0;
-    color: ${props => props.$nightMode ? "#D7E4F8" : "#334155"};
-    animation: text 1s ease-in-out 1.5s forwards;
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-
-    img{
-        width: 50px;
-    }
-
-    @keyframes text {
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
-    }
 `

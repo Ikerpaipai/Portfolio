@@ -3,7 +3,7 @@ import BackgroundCube from "../../assets/background/vecteur-cube.png"
 
 export const Header = styled.div`
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: ${props => props.$nightMode && "#1D2337"};
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -18,6 +18,10 @@ export const Header = styled.div`
         height: 100%;
         background: linear-gradient(#fff, #F2EFFF);
         z-index: -1;
+    }
+
+    @media screen and (max-width: 1450px) {
+        height: auto;
     }
 `
 

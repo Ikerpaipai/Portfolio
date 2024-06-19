@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     opacity: 0;
-    width: 40vw;
-    max-width: 400px;
-    height: 125px;
+    width: 30vw;
+    height: 11vw;
     border-radius: 20px;
     border: ${props => !props.$nightMode && "1px solid #CBCBCB"};
     background-color: ${props => props.$nightMode ? "#2E3649" : "#fff"};
@@ -27,6 +26,10 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 1450px) {
+        max-width: 400px;
+        height: 125px;
+    }
     @media screen and (max-width: 850px) {
         width: 400px;
     }
@@ -37,18 +40,28 @@ export const Title = styled.div`
     height: 30%;
     border-bottom: 1px solid #BC9DF1;
     display: flex;
+    padding: 2vw;
     align-items: center;
-    padding-left: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.8vw;
     color: ${props => props.$nightMode ? "#D7E4F8" : ""};
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 20px;
+        padding: 0 0 0 30px;
+    }
 `
 
 export const LogoContainer = styled.div`
     display: flex;
     justify-content: start;
-    gap: 13px;
-    padding: 10px;
+    gap: 1vw;
+    padding: 1vw;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1450px) {
+        gap: 13px;
+        padding: 10px;
+    }
 `

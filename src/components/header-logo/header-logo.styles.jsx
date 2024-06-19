@@ -36,7 +36,7 @@ const floating2 = keyframes`
 
 export const ImageLogo = styled.div`
     transform: scale(0);
-    width: 50px;
+    width: 3vw;
     height: auto;
     position: absolute;
     top: ${(props) => props.$top || "0"};
@@ -52,6 +52,9 @@ export const ImageLogo = styled.div`
         height: auto;
     }
 
+    @media screen and (max-width: 1450px){
+      width: 50px;
+    }
     @media screen and (max-width: 850px){
       display: none;
     }

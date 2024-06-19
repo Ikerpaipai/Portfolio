@@ -13,7 +13,7 @@ const Skill = ({title, logo, active, delay}) => {
             <LogoContainer>
                 {logo.map(item => (
                     <div key={item.name}>
-                        <LogoSVG LogoComponent={item.name} height="25px" cursor active={item.opacity} name={item.alt} tag/>
+                        <LogoSVG LogoComponent={item.name} minHeight="25px" height="2vw" cursor active={item.opacity} name={item.alt} tag/>
                     </div>
                 ))}
             </LogoContainer>

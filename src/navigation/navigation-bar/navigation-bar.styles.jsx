@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const Navigation = styled.div`
     width: 100%;
-    height: 60px;
+    height: 4.5vw;
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -30,7 +31,7 @@ export const Navigation = styled.div`
             transform: translateY(0);
         }
     }
-
+    
     @media screen and (max-width: 650px) {
         overflow: inherit;
     }
@@ -39,15 +40,25 @@ export const Navigation = styled.div`
 export const RightSide = styled.div`
     display: flex;
     align-items: center;
-    column-gap: 20px;
-    margin-right: 10px;
+    column-gap: 2vw;
+    margin-right: 1vw;
     color: ${props => props.$colorText ? "#D7E4F8" : "#334155"};
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 575px) {
+        column-gap: 20px;
+        margin-right: 10px;
+    }
 `
 
 export const NavLink = styled(Link)`
     cursor: pointer;
     z-index: 15;
+    font-size: 1.2vw;
+
+    @media screen and (max-width: 575px) {
+        font-size: 16px;
+    }
 
     @media screen and (max-width: 575px) {
         display: none;

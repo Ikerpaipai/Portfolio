@@ -14,12 +14,12 @@ const LogoIker = () => {
     return(
         <FlexContainer to="/">
             <LeftSide>
-                <LogoSVG LogoComponent={BaliseGauche} height="17px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
+                <LogoSVG LogoComponent={BaliseGauche} height="1.6vw" minHeight="17px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
                 <Title $nightMode={isOn}>Iker Dev</Title>
             </LeftSide>
             <RightSide>
-                <LogoSVG LogoComponent={BaliseSlash} height="27px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
-                <LogoSVG LogoComponent={BaliseDroite} height="17px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
+                <LogoSVG LogoComponent={BaliseSlash} height="2.4vw" minHeight="27px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
+                <LogoSVG LogoComponent={BaliseDroite} height="1.6vw" minHeight="17px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="3"/>
             </RightSide>
         </FlexContainer>
     )

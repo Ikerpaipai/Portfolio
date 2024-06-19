@@ -30,7 +30,11 @@ const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link})
         <Card className={active && "active"}>
             <CardInner className={flipped ? "flipped" : ""}>
                 <CardFront $nightMode={isOn} $image={`url(${image})`} className={active && "active"}>
-                    {active && !flipped && <LinkWeb to={link} className="link-web" target="_blank"><LogoSVG LogoComponent={LogoLink} height="50px" fill={isOn ? "#64FFDA" : "#64748B"} /></LinkWeb>}
+                    {active && !flipped &&
+                        <LinkWeb to={link} className="link-web" target="_blank">
+                            <LogoSVG LogoComponent={LogoLink} height="5vw" minHeightheight="50px" fill={isOn ? "#64FFDA" : "#64748B"} />
+                        </LinkWeb>
+                    }
                     <BottomSection>
                         <InfoContainer>
                             <TitleContainer>

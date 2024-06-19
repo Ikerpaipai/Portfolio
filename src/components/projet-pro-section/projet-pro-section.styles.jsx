@@ -3,12 +3,15 @@ import styled from "styled-components";
 export const SectionContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 850px;
+    height: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 20;
 
+    @media screen and (max-width: 1450px) {
+        height: 850px;
+    }
     @media screen and (max-width: 1100px) {
         height: 1050px;
     }
@@ -23,9 +26,13 @@ export const HeadBlocLine = styled.div`
     justify-content: center;
     width: 0%;
     height: 0%;
-    border-bottom: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    border-bottom: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
     position: relative;
     z-index: 13;
+
+    @media screen and (max-width: 1450px) {
+        border-bottom: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    }
 
     @media screen and (max-width: 850px) {
         display: none;
@@ -34,8 +41,13 @@ export const HeadBlocLine = styled.div`
 export const LigneVerticale = styled.div`
     width: 1.5px;
     height: 100%;
-    border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    border-right: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
     z-index: 13;
+
+    @media screen and (max-width: 1450px) {
+        border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    }
+
 `
 
 export const BodyLineSection = styled.div`
@@ -76,7 +88,11 @@ export const LeftLine = styled.div`
     width: 100%;
     height: 0%;
     position: relative;
-    border-left: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    border-left: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
+
+    @media screen and (max-width: 1450px) {
+        border-left: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    }
 
     @media screen and (max-width: 850px) {
         display: none;
@@ -86,8 +102,12 @@ export const LeftLine = styled.div`
 export const RightLine = styled.div`
     width: 100%;
     height: 0%;
-    border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    border-right: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
     position: relative;
+
+    @media screen and (max-width: 1450px) {
+        border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    }
 
     @media screen and (max-width: 850px) {
         display: none;

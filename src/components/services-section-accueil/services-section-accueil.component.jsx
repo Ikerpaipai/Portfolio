@@ -151,28 +151,28 @@ const ServicesSection = () => {
                     title= {t("services.title1")}
                     info= {t("services.info1")}
                     LogoComponent= {LogoTools}
-                    top= "5%"
+                    top= {hauteurHor1 - 3 + "%"}
                     classActive= {infoActive.hor1}
                 />
                 <TextContainerServices
                     title= {t("services.title2")}
                     info= {t("services.info2")}
                     LogoComponent= {LogoApi}
-                    top= "13%"
+                    top= {hauteurHor2 - 3 + "%"}
                     classActive= {infoActive.hor2}
                 />
                 <TextContainerServices
                     title= {t("services.title3")}
                     info= {t("services.info3")}
                     LogoComponent= {LogoDB}
-                    top= "21%"
+                    top= {hauteurHor3 - 3 + "%"}
                     classActive= {infoActive.hor3}
                 />
                 <TextContainerServices
                     title= {t("services.title4")}
                     info= {t("services.info4")}
                     LogoComponent= {LogoTesting}
-                    top= "29%"
+                    top= {hauteurHor4 - 3 + "%"}
                     classActive= {infoActive.hor4}
                 />
             </Services>

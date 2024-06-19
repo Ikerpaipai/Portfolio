@@ -1,10 +1,10 @@
 .switch {
-    width: 50px;
+    width: 3vw;
     background-color: #EAEAEA;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 5vw;
     padding: 3px;
     cursor: pointer;
   }
@@ -15,16 +15,35 @@
   }
   
   .handle {
-    width: 20px;
-    height: 20px;
+    width: 1.3vw;
+    height: 1.3vw;
     background-color: white;
-    border-radius: 40px;
+    border-radius: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .icon{
-    width: 16px;
-    height: 16px;
+    width: 1vw;
+    height: 1vw;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .switch {
+      width: 50px;
+      border-radius: 50px;
+      padding: 3px;
+    }
+
+    .handle {
+      width: 20px;
+      height: 20px;
+      border-radius: 40px;
+    }
+
+    .icon{
+      width: 16px;
+      height: 16px;
+    }
   }

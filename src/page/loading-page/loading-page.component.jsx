@@ -1,4 +1,4 @@
-import { Body, TopSection, Container, Title, AnimationTopDiv, AnimationBottomDiv, BottomSection, SlashContainer, WelcomeText } from "./loading-page.styles"
+import { Body, TopSection, Container, Title, AnimationTopDiv, AnimationBottomDiv, BottomSection, SlashContainer } from "./loading-page.styles"
 import LogoSVG from "../../components/logo-svg/logo-svg.component"
 import {ModeContext} from "../../contexts/toggle-mode.context"
 
@@ -15,17 +15,17 @@ const LoadingPage = () => {
             <Container>
                 <TopSection>
                     <AnimationTopDiv $nightMode={isOn}>
-                        <LogoSVG LogoComponent={BaliseGauche} height="60px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="4" />
+                        <LogoSVG LogoComponent={BaliseGauche} height="5vw" minHeight="60px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="4" />
                         <Title $nightMode={isOn}>Iker</Title>
                     </AnimationTopDiv>
                 </TopSection>
                 <SlashContainer>
-                    <LogoSVG LogoComponent={BaliseSlash} height="200px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="2" />
+                    <LogoSVG LogoComponent={BaliseSlash} height="20vw" minHeight="200px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="2" />
                 </SlashContainer>
                 <BottomSection>
                     <AnimationBottomDiv $nightMode={isOn}>
                         <Title $nightMode={isOn}>Dev</Title>
-                        <LogoSVG LogoComponent={BaliseDroite} height="60px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="4" />
+                        <LogoSVG LogoComponent={BaliseDroite} height="5vw" minHeight="60px" stroke={isOn ? "#64FFDA" : "#7C3AED"} strokeWidth="4" />
                     </AnimationBottomDiv>
                 </BottomSection>
             </Container>

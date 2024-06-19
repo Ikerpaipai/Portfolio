@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const BaseButton = styled.button`
     font-size: 1vw;
     font-weight: bold;
-    padding: 10px 70px;
-    border-width: 2px;
+    padding: 0.5vw 5vw;
+    border-width: 0.15vw;
     border-style: solid;
     border-image: ${props => !props.$nightMode && "linear-gradient(90deg, #001DB4, #4254b5 20%,#858DB6) 1"};
     border: ${props => props.$nightMode && "2px solid #4254b5"};
@@ -22,6 +22,8 @@ export const BaseButton = styled.button`
 
     @media screen and (max-width: 1450px) {
         font-size: 16px;
+        padding: 10px 70px;
+        border-width: 2px;
     }
 
     @media screen and (max-width: 850px) {
@@ -67,13 +69,13 @@ export const SectionButton = styled.button`
 `
 
 export const FormButton = styled.button`
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: bold;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#334155"};
-    padding: 10px 30px;
-    border-radius: 10px;
+    padding: 0.4vw 2vw;
+    border-radius: 0.5vw;
     background-color: ${props => props.$nightMode ? "#112240" : "#F2EBFF"};
-    box-shadow: inset 0 0 4px #7C3AED;
+    box-shadow: inset 0 0 0.3vw #7C3AED;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -81,5 +83,12 @@ export const FormButton = styled.button`
     &:hover{
         color: #F2EBFF;
         background-color: #7C3AED;
+    }
+
+    @media screen and (max-width: 1450px) {
+        font-size: 14px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 4px #7C3AED;
     }
 `

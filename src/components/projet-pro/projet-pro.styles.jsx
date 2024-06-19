@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const FlexContainer = styled.div`
     display: flex;
-    width: 900px;
-    height: 250px;
+    width: 70vw;
+    height: 15vw;
     flex-direction: ${(props)=>props.$reverse ? "row-reverse" : "row"};
 
+    @media screen and (max-width: 1450px) {
+        flex-direction: column;
+        width: 900px;
+        height: 250px;
+    }
     @media screen and (max-width: 1100px) {
         flex-direction: column;
         width: 100%;
@@ -64,10 +69,13 @@ export const Title = styled.h3`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 24px;
+    font-size: 2vw;
     height: 15%;
     transition: all 0.3s ease-in-out;
 
+    @media screen and (max-width: 1450px){
+        font-size: 24px;
+    }
     @media screen and (max-width: 1100px){
         display: none;
     }
@@ -116,9 +124,13 @@ export const IconContainer = styled.div`
 `
 
 export const Info = styled.p`
-    font-size: 16px;
+    font-size: 1.2vw;
     color: ${props => props.$nightMode ? "#929CBC" : "#475373"};
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 1450px){
+        font-size: 16px;
+    }
 `
 
 export const TagContainer = styled.div`
@@ -130,7 +142,7 @@ export const TagContainer = styled.div`
 `
 
 export const VoirPlus = styled.span`
-    font-size: 13px;
+    font-size: 1vw;
     font-weight: bold;
     color: ${props => props.$nightMode ? "#64FFDA" : "#475373"};
     cursor: pointer;
@@ -138,5 +150,9 @@ export const VoirPlus = styled.span`
 
     &:hover{
         text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1450px){
+        font-size: 13px;
     }
 `

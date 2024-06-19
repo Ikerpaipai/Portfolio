@@ -8,7 +8,7 @@ const Competence = ({info, delay, active}) => {
     const {isOn} = useContext(ModeContext)
     return(
         <Container $nightMode={isOn} $delay={delay} className={active && "active"}>
-            <LogoSVG LogoComponent={Flash} height="20px" />
+            <LogoSVG LogoComponent={Flash} minHeight="20px" height="1.2vw" />
             {info}
         </Container>
     )

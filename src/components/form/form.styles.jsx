@@ -4,10 +4,15 @@ export const FormContainer = styled.form`
     width: 90%;
     height: 100%;
     background-color: ${props => props.$nightMode ? "#2E3649" : "#CABEFF"};
-    border-radius: 20px;
+    border-radius: 2vw;
     box-shadow:  ${props => props.$nightMode ? "inset 0 0 4px #656565": "inset 0 0 10px #AB98FF"};
-    padding: 22px 10%;
+    padding: 2vw 5%;
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 1450px) {
+        padding: 22px 10%;
+        border-radius: 20px;
+    }
 `
 
 export const Row = styled.div`

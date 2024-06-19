@@ -5,7 +5,7 @@ export const Transition = styled.div`
     opacity: 0;
     transform: translateY(-15px);
     transition: all 1s ease-in-out;
-    position: relative;
+    position: absolute;
     top: ${(props) => props.$top};
 
     &.active{
@@ -79,10 +79,14 @@ export const ImageSection = styled.div`
     border-radius: 20px;
     
     svg{
-        width: 130px;
+        width: 10vw;
         height: auto;
         fill: ${props => props.$nightMode ? "#117B68" : "#DCDFEE"};
         transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 1450px) {
+            width: 130px;
+        }
     }
 
     @media screen and (max-width: 850px) {
@@ -91,22 +95,34 @@ export const ImageSection = styled.div`
 `
 
 export const Title = styled.h3`
-    font-size: 18px;
+    font-size: 1.7vw;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#7C3AED"};
     transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 18px;
+    }
 `
 
 export const Info = styled.p`
-    font-size: 16px;
+    font-size: 1.3vw;
     margin-top: 10px;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#334155"};
     transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 16px;
+    }
 `
 
 export const Logo = styled(FlashLogo)`
     width: auto;
-    height: 25px;
+    height: 2vw;
     margin-right: 5px;
+
+    @media screen and (max-width: 1450px) {
+        height: 25px;
+    }
 `

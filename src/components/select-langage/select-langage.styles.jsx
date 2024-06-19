@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const Logo = styled.div`
     position: relative;
-    width: 25px;
+    width: 1.8vw;
     height: auto;
     margin-top: ${props => props.$marginTop};
     cursor: pointer;
@@ -15,6 +15,10 @@ export const Logo = styled.div`
     svg{
         width: 100%;
         height: 100%;
+    }
+
+    @media screen and (max-width: 1450px) {
+        width: 25px;
     }
 `
 

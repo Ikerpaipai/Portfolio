@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 500px;
+    height: 40vw;
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @media screen and (max-width: 1450px) {
+        height: 500px;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -59,9 +63,14 @@ export const Line = styled.div`
     right: 15%;
     width: 0%;
     height: 0%;
-    border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
-    border-bottom: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    border-right: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
+    border-bottom: ${props => props.$nightMode ? "0.15vw solid #64FFDA" : "0.15vw solid #7C3AED"};
     z-index: 13;
+
+    @media screen and (max-width: 1450px) {
+        border-right: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+        border-bottom: ${props => props.$nightMode ? "1.5px solid #64FFDA" : "2px solid #7C3AED"};
+    }
 
     @media screen and (max-width: 650px) {
         display: none;
@@ -69,25 +78,37 @@ export const Line = styled.div`
 `
 
 export const Title = styled.h4`
-    font-size: 34px;
+    font-size: 2.7vw;
     font-weight: 100;
     color: ${props => props.$nightMode ? "#CCD6F6" : "#64748B"};
+
+    @media screen and (max-width: 1450px) {
+        font-size: 34px;
+    }
 `
 export const TitleSpan = styled.span`
-    font-size: 34px;
+    font-size: 2.7vw;
     color: #334155;
     font-weight: 600;
     border-radius: 5px;
     padding: 0px 4px;
     background-color: #EFEFEF;
     margin-left: 5px;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 34px;
+    }
 `
 
 export const SubTitle = styled.h5`
     width: 40%;
-    font-size: 18px;
+    font-size: 1.3vw;
     color: ${props => props.$nightMode ? "#CCD6F6" : "#64748B"};
     text-align: center;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 18px;
+    }
 
     @media screen and (max-width: 650px) {
         width: 80%;

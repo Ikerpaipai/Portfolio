@@ -26,29 +26,41 @@ export const Body = styled.div`
 
 export const TitleContainer = styled.div`
     height: 30%;
-    padding-top: 60px;
+    padding-top: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1450px) {
+        padding-top: 60px;
+    }
 `
 
 export const Title = styled.h1`
     display: inline;
-    font-size: 24px;
+    font-size: 2vw;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#475569"};
     transition: all 0.3s ease-in-out;
     z-index: 15;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 24px;
+    }
 `
 export const SubTitle = styled.h2`
     display: inline;
     width: 70%;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-weight: 100;
     text-align: center;
     color: ${props => props.$nightMode ? "#D7E4F8" : "#475569"};
     margin: 10px 0 ;
     transition: all 0.3s ease-in-out;
     z-index: 15;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 16px;
+    }
 
     @media screen and (max-width: 650px) {
         width: 90%;

@@ -3,11 +3,16 @@ import styled from "styled-components";
 export const Title = styled.h4`
     position: relative;
     color: ${props => props.$nightMode ? "#64FFDA" : "#7B8390"};
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 1vw 0 3vw 0;
     transition: all 0.3s ease-in-out;
     z-index: 15;
+
+    @media screen and (max-width: 1450px) {
+        font-size: 24px;
+        margin: 30px 0;
+    }
 `
 
 export const FlexContainer = styled.div`

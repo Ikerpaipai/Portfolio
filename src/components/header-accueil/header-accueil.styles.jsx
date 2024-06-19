@@ -12,13 +12,16 @@ export const HeaderContainer = styled.div`
 `
 
 export const TitleContainer = styled.div`
-    width: 550px;
+    width: 40vw;
     position: absolute;
     top: 50%;
     margin-left: 20vw;
     transform: translateY(-50%);
     z-index: 15;
-
+    
+    @media screen and (max-width: 1450px) {
+        width: 550px;
+    }
     @media screen and (max-width: 850px) {
         margin-left: 0;
         left: 50%;
@@ -34,7 +37,7 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 34px;
+    font-size: 3vw;
     opacity: 0;
     color: ${props => props.$colorText ? "#D7E4F8" : "#334155"};
     transition: all 0.3s ease-in-out;
@@ -51,6 +54,9 @@ export const Title = styled.h1`
         }        
     }
 
+    @media screen and (max-width: 1450px) {
+        font-size: 34px;
+    }
     @media screen and (max-width: 750px) {
         font-size: 28px;
     }
@@ -68,7 +74,7 @@ export const ColorText = styled.span`
 
 export const SubTitle = styled.h2`
     opacity: 0;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 100;
     margin: 20px 0;
     color: ${props => props.$colorText ? "#D7E4F8" : "#334155"};
@@ -86,6 +92,9 @@ export const SubTitle = styled.h2`
         }        
     }
 
+    @media screen and (max-width: 1450px) {
+        font-size: 20px;
+    }
     @media screen and (max-width: 750px) {
         font-size: 16px;
     }

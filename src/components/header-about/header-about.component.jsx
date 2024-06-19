@@ -27,8 +27,8 @@ const HeaderAbout = () => {
                 <ImageContainer $nightMode={isOn}/>
                 <Info $nightMode={isOn}>{t("about.header.discover-me")}</Info>
                 <LogoContainer>
-                    <LogoSVG LogoComponent={GithubLogo} fill="#334155" height="25px" cursor hoverFill={isOn && "#64FFDA"} />
-                    <LogoSVG LogoComponent={LinkedinLogo} fill="#334155" height="25px" cursor hoverFill={isOn && "#64FFDA"} />
+                    <LogoSVG LogoComponent={GithubLogo} fill="#334155" minHeight="25px" height="1.8vw" cursor hoverFill={isOn && "#64FFDA"} />
+                    <LogoSVG LogoComponent={LinkedinLogo} fill="#334155" minHeight="25px" height="1.8vw" cursor hoverFill={isOn && "#64FFDA"} />
                 </LogoContainer>
                 <ExperienceContainer $nightMode={isOn}>
                     <span>+ <Number $nightMode={isOn}>1</Number></span>{t("about.header.experiences")}
