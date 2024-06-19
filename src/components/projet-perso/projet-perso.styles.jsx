@@ -122,6 +122,11 @@ export const BottomSection = styled.div`
     left: 10px;
     display: flex;
     justify-content: space-between;
+    opacity: 1;
+
+    .active{
+        opacity: 0;
+    }
 `;
 
 export const InfoContainer = styled.div`
@@ -174,18 +179,22 @@ export const Detail = styled.span`
     margin-right: 30px;
     cursor: pointer;
     font-size: 1vw;
+    width: 6vw;
 
     @media screen and (max-width: 1450px) {
         font-size: 14px;
+        width: 65px;
     }
 `
 
 export const Title = styled.h4`
     color: ${props => props.$nightMode ? "#D7E4F8" : "#fff"};
     font-size: 1.3vw;
+    width: 20vw;
 
     @media screen and (max-width: 1450px) {
         font-size: 16px;
+        width: 200px;
     }
 `
 

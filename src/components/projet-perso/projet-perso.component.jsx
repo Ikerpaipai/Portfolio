@@ -32,10 +32,10 @@ const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link})
                 <CardFront $nightMode={isOn} $image={`url(${image})`} className={active && "active"}>
                     {active && !flipped &&
                         <LinkWeb to={link} className="link-web" target="_blank">
-                            <LogoSVG LogoComponent={LogoLink} height="5vw" minHeightheight="50px" fill={isOn ? "#64FFDA" : "#64748B"} />
+                            <LogoSVG LogoComponent={LogoLink} height="5vw" minHeight="50px" fill={isOn ? "#64FFDA" : "#64748B"} />
                         </LinkWeb>
                     }
-                    <BottomSection>
+                    <BottomSection className={!flipped && "active"}>
                         <InfoContainer>
                             <TitleContainer>
                                 <NumberContainer>{number}</NumberContainer>
@@ -61,7 +61,7 @@ const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link})
                         </TagContainer>
                     </div>
                     <BottomBackContainer>
-                        <Backflip $nightMode={isOn}>Retour</Backflip>
+                        <Backflip $nightMode={isOn} onClick={handleFlip}>Retour</Backflip>
                         <div></div>
                     </BottomBackContainer>
                 </CardBack>

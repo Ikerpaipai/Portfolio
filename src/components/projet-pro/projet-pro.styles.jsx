@@ -7,7 +7,6 @@ export const FlexContainer = styled.div`
     flex-direction: ${(props)=>props.$reverse ? "row-reverse" : "row"};
 
     @media screen and (max-width: 1450px) {
-        flex-direction: column;
         width: 900px;
         height: 250px;
     }
