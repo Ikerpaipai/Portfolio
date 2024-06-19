@@ -32,7 +32,7 @@ export const TitleContainer = styled.div`
         width: 431px;
     }
     @media screen and (max-width: 600px) {
-        width: 380px;
+        width: 390px;
     }
 `
 

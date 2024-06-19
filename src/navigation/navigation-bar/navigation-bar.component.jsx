@@ -19,6 +19,13 @@ const NavigationBar = () => {
 
     const controlNavbar = () => {
         if (typeof window !== "undefined") {
+            
+            const scrollTop = window.scrollY;
+            if (scrollTop <= 0) {
+                setShow(true);
+                return;
+            }
+
             if (window.scrollY > lastScrollY) {
                 setShow(false);
             } else {
