@@ -65,6 +65,7 @@ export const Separateur = styled.hr`
     width: 70%;
     height: 2px;
     background-color: ${props => props.$nightMode ? "#64FFDA" : "#7C3AED"};
+    border: none;
     opacity: 0;
     transition: all 0.3s ease-in-out 0.2s;
 
