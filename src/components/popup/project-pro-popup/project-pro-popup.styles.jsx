@@ -68,10 +68,46 @@ export const InfoContainer = styled.div`
     margin-top: 15px;
 `
 
+export const FlexContainerTitle = styled.div`
+    display: block;
+
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+`
+
 export const Title = styled.h3`
     color: ${props => props.$nightMode ? "#CCD6F6" : "black"};
     transition: all 0.3s ease-in-out;
 `
+
+export const StepResponsiveContainer = styled.div`
+    display: none;
+    width: 20%;
+    height: 100%;
+
+    svg{
+        width: 100%;
+        height: auto;
+        fill: ${props => props.$nightMode ? "#64FFDA" : "black"};
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 850px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40%;
+    }
+
+    @media screen and (max-width: 470px) {
+        width: 30%;
+    }
+`
+
 export const Paragraphe = styled.p`
     color: ${props => props.$nightMode ? "#929CBC" : "black"};
     transition: all 0.3s ease-in-out;
@@ -84,28 +120,8 @@ export const Paragraphe = styled.p`
         height: 125px;
     }
     @media screen and (max-width: 850px) {
-        height: 110px;
-    }
-    @media screen and (max-width: 680px) {
-        height: 125px;
-    }
-    @media screen and (max-width: 580px) {
-        height: 150px;
-    }
-    @media screen and (max-width: 530px) {
-        height: 180px;
-    }
-    @media screen and (max-width: 470px) {
-        height: 200px;
-    }
-    @media screen and (max-width: 420px) {
-        height: 240px;
-    }
-    @media screen and (max-width: 350px) {
-        height: 260px;
-    }
-    @media screen and (max-width: 330px) {
-        height: 290px;
+        height: auto;
+        margin: 10px 0;
     }
 `
 
@@ -114,6 +130,10 @@ export const StepContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
 `
 
 export const Step = styled.span`
@@ -134,6 +154,9 @@ export const TitleLibrairie = styled.h4`
     color: ${props => props.$nightMode ? "#CCD6F6" : "black"};
     margin-top: 10px;
     transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 850px) {
+        margin: 10px 0;
+    }
 `
 export const LibrairieContainer = styled.div`
     display: flex;

@@ -1,8 +1,13 @@
 import { useContext, useState } from "react"
-import { Container, ImageFlexContainer, ImagePrincipale, ImageSelect, InfoContainer, LibrairieContainer, LibrairieSection, Paragraphe, Step, StepContainer, Title, TitleLibrairie } from "./project-pro-popup.styles"
-import Tag from "../../tag/tag.component"
 import { ModeContext } from "../../../contexts/toggle-mode.context"
 import { useTranslation } from "react-i18next"
+
+import Tag from "../../tag/tag.component"
+
+import { Container, FlexContainerTitle, ImageFlexContainer, ImagePrincipale, ImageSelect, InfoContainer, LibrairieContainer, LibrairieSection, Paragraphe, Step, StepContainer, StepResponsiveContainer, Title, TitleLibrairie } from "./project-pro-popup.styles"
+
+import ArrowRight from "../../../assets/logo-divers/arrow-right.svg?react"
+import ArrowLeft from "../../../assets/logo-divers/arrow-left.svg?react"
 
 /* eslint-disable react/prop-types */
 const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
@@ -51,7 +56,13 @@ const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
                 ))}
             </ImageFlexContainer>
             <InfoContainer>
-                <Title $nightMode={isOn}>{title}</Title>
+                <FlexContainerTitle>
+                    <Title $nightMode={isOn}>{title}</Title>
+                    <StepResponsiveContainer $nightMode={isOn}>
+                        <ArrowLeft onClick={()=>handleDecrementIndex(index)} />
+                        <ArrowRight onClick={()=>handleIncrementIndex(index)} />
+                    </StepResponsiveContainer>
+                </FlexContainerTitle>
                 <Paragraphe $nightMode={isOn}>{infoDetails[index]}</Paragraphe>
             </InfoContainer>
             {infoDetails.length > 1 && <StepContainer>
