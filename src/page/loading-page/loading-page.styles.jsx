@@ -4,32 +4,35 @@ export const Body = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: ${props => props.$nightMode ? "#1D2337" : "linear-gradient(#fff 30%, #F2EFFF)"};
+    background: ${props => props.$nightMode && "#1D2337"};
     border-bottom: 1px solid #D7CAEF;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#fff 30%, #F2EFFF);
+        z-index: -1;
+        border-bottom: 1px solid #D7CAEF;
+    }
 
 
     @media screen and (min-width: 850px) {
         &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(#fff 30%, #F2EFFF);
-            z-index: -1;
-            border-bottom: 1px solid #D7CAEF;
             animation: LoadingBodyUp 1s ease-in-out 2.5s forwards;
         }
 
         @keyframes LoadingBodyUp {
-            form{
-                height: 100vh;
-            }
-            to{
-                height: 82vh;
-            }
+        form{
+            height: 100vh;
         }
+        to{
+            height: 82vh;
+        }
+    }
     }
 `
 
