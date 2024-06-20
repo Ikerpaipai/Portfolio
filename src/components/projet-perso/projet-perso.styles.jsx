@@ -184,7 +184,7 @@ export const Detail = styled.span`
 
     @media screen and (max-width: 1450px) {
         font-size: 14px;
-        width: 65px;
+        width: 70px;
     }
 `
 

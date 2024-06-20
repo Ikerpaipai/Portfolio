@@ -6,8 +6,10 @@ import { ModeContext } from "../../contexts/toggle-mode.context"
 import Tag from "../tag/tag.component"
 import LogoSVG from "../logo-svg/logo-svg.component"
 import LogoLink from "../../assets/logo-divers/link.svg?react"
+import { useTranslation } from "react-i18next"
 
 const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link}) => {
+    const {t} = useTranslation("global")
     const {isOn} = useContext(ModeContext)
     const [active, setActive] = useState(false)
     const [flipped, setFlipped] = useState(false);
@@ -44,14 +46,14 @@ const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link})
                                     <SubTitle $nightMode={isOn}>{smallInfo}</SubTitle>
                                 </div>
                             </TitleContainer>
-                            <Detail onClick={handleFlip} $nightMode={isOn}>Voir détails</Detail>
+                            <Detail onClick={handleFlip} $nightMode={isOn}>{t("projetPerso.card.voirDetails")}</Detail>
                         </InfoContainer>
                     </BottomSection>
                 </CardFront>
                 <CardBack $nightMode={isOn} onClick={handleFlip}>
                     <Info $nightMode={isOn}>{info}</Info>
                     <div>
-                        <StackTitle $nightMode={isOn}>Stack utilisée :</StackTitle>
+                        <StackTitle $nightMode={isOn}>{t("projetPerso.card.stacks")}</StackTitle>
                         <TagContainer>
                             {stack.map((item, index) => (
                                 <div key={index}>
@@ -61,7 +63,7 @@ const ProjetPerso = ({show, number, title, smallInfo, info, stack, image, link})
                         </TagContainer>
                     </div>
                     <BottomBackContainer>
-                        <Backflip $nightMode={isOn} >Retour</Backflip>
+                        <Backflip $nightMode={isOn}>{t("projetPerso.card.retour")}</Backflip>
                         <div></div>
                     </BottomBackContainer>
                 </CardBack>

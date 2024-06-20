@@ -5,8 +5,10 @@ import { FlexContainer, IconContainer, ImageSection, Info, InfoContainer, InfoSe
 import Popup from "../popup/popup.component"
 import ProjectProPopup from "../popup/project-pro-popup/project-pro-popup.component"
 import { ModeContext } from "../../contexts/toggle-mode.context"
+import { useTranslation } from "react-i18next"
 
 const ProjetPro = ({reverse, title, info, tag, infoDetails, tagFirst, tagSecond, image}) => {
+    const [t] = useTranslation("global")
     const {isOn} = useContext(ModeContext)
     const [showPopup, setShowPopup] = useState(false)
 
@@ -29,7 +31,7 @@ const ProjetPro = ({reverse, title, info, tag, infoDetails, tagFirst, tagSecond,
                             <Tag key={item} title={item}/>
                         ))}
                     </TagContainer>
-                    <VoirPlus onClick={handleShowPopup} $nightMode={isOn}>Voir plus de détails...</VoirPlus>
+                    <VoirPlus onClick={handleShowPopup} $nightMode={isOn}>{t("projetPro.voirDetails")}</VoirPlus>
                 </InfoContainer>
                 <IconContainer>
 

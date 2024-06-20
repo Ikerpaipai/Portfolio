@@ -2,9 +2,11 @@ import { useContext, useState } from "react"
 import { Container, ImageFlexContainer, ImagePrincipale, ImageSelect, InfoContainer, LibrairieContainer, LibrairieSection, Paragraphe, Step, StepContainer, Title, TitleLibrairie } from "./project-pro-popup.styles"
 import Tag from "../../tag/tag.component"
 import { ModeContext } from "../../../contexts/toggle-mode.context"
+import { useTranslation } from "react-i18next"
 
 /* eslint-disable react/prop-types */
 const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
+    const [t] = useTranslation("global")
     const {isOn} = useContext(ModeContext)
     const [index, setIndex] = useState(0)
     const [isImageZoomed, setIsImageZoomed] = useState(false);
@@ -53,11 +55,11 @@ const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
                 <Paragraphe $nightMode={isOn}>{infoDetails[index]}</Paragraphe>
             </InfoContainer>
             {infoDetails.length > 1 && <StepContainer>
-                <Step onClick={()=>handleDecrementIndex(index)} $nightMode={isOn}>Précédent</Step>
-                <Step onClick={()=>handleIncrementIndex(index)} $nightMode={isOn}>Suivant</Step>
+                <Step onClick={()=>handleDecrementIndex(index)} $nightMode={isOn}>{t("projetPro.precedent")}</Step>
+                <Step onClick={()=>handleIncrementIndex(index)} $nightMode={isOn}>{t("projetPro.suivant")}</Step>
             </StepContainer>}
             <LibrairieSection>
-                <TitleLibrairie $nightMode={isOn}>Technologies principales :</TitleLibrairie>
+                <TitleLibrairie $nightMode={isOn}>{t("projetPro.stacksPrincipales")}</TitleLibrairie>
                 <LibrairieContainer>
                     {tagFirst.map((item, index) => (
                         <Tag key={index} title={item}/>
@@ -65,7 +67,7 @@ const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
                 </LibrairieContainer>
                 {tagSecond &&
                 <>
-                    <TitleLibrairie $nightMode={isOn}>Autres technologies :</TitleLibrairie>
+                    <TitleLibrairie $nightMode={isOn}>{t("projetPro.stacksAutres")}</TitleLibrairie>
                     <LibrairieContainer>
                         {tagSecond.map((item, index) => (
                             <Tag key={index} title={item}/>

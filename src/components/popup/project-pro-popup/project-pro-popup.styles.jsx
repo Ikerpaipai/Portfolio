@@ -75,6 +75,7 @@ export const Title = styled.h3`
 export const Paragraphe = styled.p`
     color: ${props => props.$nightMode ? "#929CBC" : "black"};
     transition: all 0.3s ease-in-out;
+    height: 90px;
 `
 
 export const StepContainer = styled.div`

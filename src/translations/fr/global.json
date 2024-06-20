@@ -38,7 +38,12 @@
             "Web e-commerce développée de A-Z en noCode à partir d'un Saas.",
             "Mise en place du SEO, actualisation des articles, outils d'analyses"
         ],
-        "infoDetails2": ["Web e-commerce développée de A-Z en noCode à partir d'un Saas. Mise en place du SEO, actualisation des articles, outils d'analyses"]
+        "infoDetails2": ["Web e-commerce développée de A-Z en noCode à partir d'un Saas. Mise en place du SEO, actualisation des articles, outils d'analyses"],
+        "precedent": "Précédent",
+        "suivant": "Suivant",
+        "stacksPrincipales": "Technologies principales :",
+        "stacksAutres": "Autres technologies :",
+        "voirDetails": "Voir plus de détails..."
     },
     "projetPerso": {
         "title": "Aire d'",
@@ -56,7 +61,10 @@
             "info3": "Cette page utilise l'API de Clarifai pour détecter automatiquement les visages dans les images téléchargées. Une version simplifiée d'authentification a été mise en place",
             "title4": "Voyage à Kyoto",
             "smallInfo4": "Entraînement page d'accueil",
-            "info4": "Mon premier site d'entrainement responsive pour ordinateurs, tablettes et smartphones"
+            "info4": "Mon premier site d'entrainement responsive pour ordinateurs, tablettes et smartphones",
+            "voirDetails": "Voir détails",
+            "retour": "Retour",
+            "stacks": "Stack utilisée :"
         }
     },
     "about": {

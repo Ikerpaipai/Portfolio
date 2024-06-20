@@ -42,7 +42,12 @@
         ],
         "infoDetails2": [
           "Web de comercio electrónico desarrollada de A a Z sin código a partir de un SaaS. Implementación de SEO, actualización de artículos, herramientas de análisis."
-        ]
+        ],
+        "precedent": "Anterior",
+        "suivant": "Siguiente",
+        "stacksPrincipales": "Tecnologías principales :",
+        "stacksAutres": "Otras tecnologías :",
+        "voirDetails": "Ver más detalles..."
       },
       "projetPerso": {
         "title": "Área de",
@@ -60,7 +65,10 @@
           "info3": "Esta página utiliza la API de Clarifai para detectar automáticamente los rostros en las imágenes cargadas. Se implementó una versión simplificada de autenticación.",
           "title4": "Viaje a Kyoto",
           "smallInfo4": "Entrenamiento página de inicio",
-          "info4": "Mi primer sitio de entrenamiento responsive para computadoras, tabletas y teléfonos inteligentes."
+          "info4": "Mi primer sitio de entrenamiento responsive para computadoras, tabletas y teléfonos inteligentes.",
+          "voirDetails": "Ver detalles",
+          "retour": "Volver",
+          "stacks": "Tecnologías usadas :"
         }
       },
       "about": {
