@@ -153,5 +153,12 @@
                 "min": "10 caractères minimum"
             }
         }
+    },
+    "toast":{
+        "message":{
+            "loading": "En attente de l'envoi...",
+            "success": "Votre message a bien été envoyé",
+            "error": "Votre message n'a pas pu être envoyé"
+        }
     }
 }

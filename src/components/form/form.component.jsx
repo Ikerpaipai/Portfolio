@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { ModeContext } from "../../contexts/toggle-mode.context";
 import { useTranslation } from "react-i18next";
 import emailjs from '@emailjs/browser';
+import { Toaster, toast } from "sonner";
 
 const defaultValues = {
     prenom: "",
@@ -46,26 +47,32 @@ const Form = () => {
         reValidateMode: "onChange"
     });
 
-    const {handleSubmit} = methods
+    const {handleSubmit, reset} = methods
 
     const onSubmit = async () => {
         const form = document.querySelector("form");
+        
         if (form) {
+            const promise = () => new Promise((resolve) => setTimeout(() => resolve(), 2000));
+
             emailjs
             .sendForm('service_kdoe1rg', 'template_tf592bv', form, '3DL7QGV6bCa_lZuL5')
             .then(
-                () => {
-                console.log('SUCCESS!');
-                },
-                (error) => {
-                console.log('FAILED...', error.text);
-                },
+                toast.promise(promise, {
+                    loading: t("toast.message.loading"),
+                    success: () => {
+                        reset(defaultValues)
+                        return t("toast.message.success");
+                    },
+                    error: t("toast.message.error"),
+                }),
             );
         }
     };
 
     return(
         <FormProvider {...methods}>
+            <Toaster position="bottom-right" richColors closeButton/>
             <FormContainer onSubmit={handleSubmit(onSubmit)} $nightMode={isOn}>
                 <Row>
                     <InputText label="prenom" required placeholder={t("contact.form.prenom.placeholder")} />
