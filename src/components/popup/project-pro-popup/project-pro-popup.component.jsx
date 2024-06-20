@@ -59,8 +59,12 @@ const ProjectProPopup = ({image, title, infoDetails, tagFirst, tagSecond}) => {
                 <FlexContainerTitle>
                     <Title $nightMode={isOn}>{title}</Title>
                     <StepResponsiveContainer $nightMode={isOn}>
-                        <ArrowLeft onClick={()=>handleDecrementIndex(index)} />
-                        <ArrowRight onClick={()=>handleIncrementIndex(index)} />
+                        {infoDetails.length > 1 &&
+                            <>
+                                <ArrowLeft onClick={()=>handleDecrementIndex(index)} />
+                                <ArrowRight onClick={()=>handleIncrementIndex(index)} />
+                            </> 
+                        }
                     </StepResponsiveContainer>
                 </FlexContainerTitle>
                 <Paragraphe $nightMode={isOn}>{infoDetails[index]}</Paragraphe>
