@@ -75,7 +75,38 @@ export const Title = styled.h3`
 export const Paragraphe = styled.p`
     color: ${props => props.$nightMode ? "#929CBC" : "black"};
     transition: all 0.3s ease-in-out;
-    height: 90px;
+    height: 70px;
+
+    @media screen and (max-width: 1560px) {
+        height: 90px;
+    }
+    @media screen and (max-width: 1110px) {
+        height: 125px;
+    }
+    @media screen and (max-width: 850px) {
+        height: 110px;
+    }
+    @media screen and (max-width: 680px) {
+        height: 125px;
+    }
+    @media screen and (max-width: 580px) {
+        height: 150px;
+    }
+    @media screen and (max-width: 530px) {
+        height: 180px;
+    }
+    @media screen and (max-width: 470px) {
+        height: 200px;
+    }
+    @media screen and (max-width: 420px) {
+        height: 240px;
+    }
+    @media screen and (max-width: 350px) {
+        height: 260px;
+    }
+    @media screen and (max-width: 330px) {
+        height: 290px;
+    }
 `
 
 export const StepContainer = styled.div`
