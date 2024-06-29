@@ -91,10 +91,13 @@ export const ImageContainer = styled.div`
     width: 18vw;
     height: 18vw;
     border-radius: 50%;
-    background-color: gray;
+    background-image: ${props => props.$image};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 7vw;
-    border: ${props => props.$nightMode && "1px solid #64FFDA"};
-    box-shadow: ${props => props.$nightMode && "0 0 1vw #64FFDA"};
+    border: ${props => props.$nightMode ? "1px solid #64FFDA" : "1px solid #7C3AED"};
+    box-shadow: ${props => props.$nightMode ? "0 0 1vw #64FFDA" : "0 0 1vw #7C3AED"};
     transition: all 0.3s ease-in-out;
 
     @media screen and (max-width: 1450px) {
@@ -102,7 +105,7 @@ export const ImageContainer = styled.div`
         height: 250px;
         border-radius: 300px;
         margin-top: 60px;
-        box-shadow: ${props => props.$nightMode && "0 0 10px #64FFDA"};
+        box-shadow: ${props => props.$nightMode ? "0 0 10px #64FFDA" : "0 0 6px #7C3AED"};
     }
 `
 
@@ -128,34 +131,4 @@ export const LogoContainer = styled.div`
         column-gap: 10px;
         margin-top: 5px;
     }
-`
-
-export const ExperienceContainer = styled.div`
-    margin-top: 4vw;
-    padding: 15px 30px;
-    color: ${props => props.$nightMode ? "#D7E4F8" : "#334155"};
-    font-size: 1.5vw;
-    font-weight: bold;
-    background-color: ${props => props.$nightMode ? "#2E3649" : "#F2EBFF"};
-    border-radius: 10px;
-    box-shadow:  ${props => props.$nightMode ? "inset 0 0 4px #656565": "inset 0 0 4px #7C3AED"};
-    transition: all 0.3s ease-in-out;
-
-    span{
-        font-size: 3vw;
-    }
-
-    @media screen and (max-width: 1450px) {
-        font-size: 18px;
-        margin-top: 30px;
-
-        span{
-            font-size: 36px;
-        }
-    }
-`
-
-export const Number = styled.span`
-        color: ${props => props.$nightMode ? "#64FFDA" : "#7C3AED"};
-        transition: all 0.3s ease-in-out;
 `
