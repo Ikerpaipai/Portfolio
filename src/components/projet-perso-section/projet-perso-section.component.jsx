@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next"
 import BlogImage from "../../assets/projet-perso/projet-blog.png"
 import CrownImage from "../../assets/projet-perso/projet-crown-clothes.png"
 import DetectImage from "../../assets/projet-perso/projet-detect-face.png"
+import AuthImage from "../../assets/projet-perso/projet-authentification.png"
 import KyotoImage from "../../assets/projet-perso/projet-voyage.png"
 
 const ProjetPersoSection = () => {
@@ -113,6 +114,15 @@ const ProjetPersoSection = () => {
             title: t("projetPerso.card.title4"),
             smallInfo: t("projetPerso.card.smallInfo4"),
             info: t("projetPerso.card.info4"),
+            stack:["Html", "Css", "EJS", "bcryptjs", "JWT", "NodeJs", "Express", "Render"],
+            image: AuthImage,
+            link: "https://training-authentification.onrender.com"
+        },
+        {
+            index: 5,
+            title: t("projetPerso.card.title5"),
+            smallInfo: t("projetPerso.card.smallInfo5"),
+            info: t("projetPerso.card.info5"),
             stack:["Html", "Css", "Javascript"],
             image: KyotoImage,
             link: "https://voyage-kyoto.netlify.app/"
