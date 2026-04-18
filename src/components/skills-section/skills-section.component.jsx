@@ -8,6 +8,7 @@ import ReactLogo from "../../assets/logo-dev/react_logo.svg?react"
 import Tanstack from "../../assets/logo-dev/react-query_logo.svg?react"
 import StyledComponentsLogo from "../../assets/logo-dev/styled-components.svg?react"
 import VitestLogo from "../../assets/logo-dev/vitest_logo.svg?react"
+import PlaywrightLogo from "../../assets/logo-dev/playwright.svg?react"
 import JestLogo from "../../assets/logo-dev/jest_logo.svg?react"
 import AngularLogo from "../../assets/logo-dev/angular.svg?react"
 import VueLogo from "../../assets/logo-dev/vue.svg?react"
@@ -46,6 +47,7 @@ const frontEnd = [
     {name: Redux, opacity: false, alt: "Redux"},
     {name: StyledComponentsLogo, opacity: false, alt: "Styled-Components"},
     {name: VitestLogo, opacity: false, alt: "Vitest"},
+    {name: PlaywrightLogo, opacity: false, alt: "Playwright"},
     {name: JestLogo, opacity: false, alt: "Jest"},
     {name: AngularLogo, opacity: true, alt: "Angular"},
     {name: VueLogo, opacity: true, alt: "Vue"},

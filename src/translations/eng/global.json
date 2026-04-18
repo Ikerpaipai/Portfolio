@@ -1,0 +1,175 @@
+{
+  "accueil": {
+    "header": {
+      "title1": "Hi,",
+      "title2": "I'm Iker,",
+      "title3": "Web Developer",
+      "info": "Passionate about full-stack and specialized in front-end development",
+      "button": "Contact me"
+    }
+  },
+  "choose-section": {
+    "title1": "Services",
+    "info1": "Tailored solutions adapted to each client's specific needs",
+    "title2": "Professional Projects",
+    "info2": "Various challenges successfully tackled with innovative solutions through my professional experience",
+    "title3": "Personal Projects",
+    "info3": "Explore and discover my learning journey, enhancing my skills as a developer"
+  },
+  "services": {
+    "title1": "Web Application Development:",
+    "info1": "Design and build interactive and dynamic web applications tailored to client needs, using appropriate frameworks and libraries with a strong focus on security and code optimization",
+    "title2": "API Development:",
+    "info2": "API development involves creating application programming interfaces, including managing exchanged data to enable communication between different parts of an application or between multiple applications",
+    "title3": "Database Integration:",
+    "info3": "Implement and manage databases to efficiently store and retrieve data required for web applications",
+    "title4": "Testing:",
+    "info4": "Testing is an essential practice in application development. It involves verifying code reliability and performance through various types of testing such as unit testing, integration testing, and automated testing. The goal is to detect and fix issues early to ensure quality, reliability, and security"
+  },
+  "projetPro": {
+    "title1": "Pigini Accordion",
+    "info1": [
+      "End-to-end e-commerce application developed from scratch, centralizing workflows for both individual and professional clients.",
+      "An admin panel manages users and internal business operations."
+    ],
+    "infoDetails1": [
+      "On this dynamic product page, you will find an interactive system designed to customize your purchasing experience through intuitive options. Each selection updates the product price and weight in real time. Prices also adjust based on user status (individual/professional).",
+      "On the dynamic cart page, both individual and professional users benefit from tailored experiences. Individual users can request information from multiple resellers with a single click, sending an email with product details. Professional users can complete their orders directly within the application.",
+      "The favorites page allows users to manage their interests by saving products. It also includes a comparison table where items can be compared by features, price, and specifications, helping users make informed decisions.",
+      "The admin dashboard provides a comprehensive overview for business management. From this centralized space, administrators can monitor notifications and manage users, track purchases and requests, handle accounting comparisons across years, messaging, and scheduling.",
+      "The analytics section features interactive charts built with Chart.js for clear and dynamic data visualization. These tools simplify accounting and provide insights such as revenue and commission comparisons across different years."
+    ],
+    "title2": "ClicMusic",
+    "info2": [
+      "End-to-end e-commerce website built without code using a SaaS platform.",
+      "SEO implementation, product updates, and analytics tools."
+    ],
+    "infoDetails2": [
+      "End-to-end e-commerce website built without code using a SaaS platform, including SEO implementation, product updates, and analytics tools."
+    ],
+    "precedent": "Previous",
+    "suivant": "Next",
+    "stacksPrincipales": "Main technologies:",
+    "stacksAutres": "Other technologies:",
+    "voirDetails": "View more details..."
+  },
+  "projetPerso": {
+    "title": "Training",
+    "titleSpan": "Area",
+    "subTitle": "Intuitive digital experiences exploring a variety of tools and technologies",
+    "card": {
+      "title1": "Crown Clothing",
+      "smallInfo1": "E-commerce with Stripe",
+      "info1": "This e-commerce website is connected to Firebase, providing a database and secure authentication. It also includes a payment system using Stripe's test API.",
+      "title2": "Blog",
+      "smallInfo2": "REST API Practice",
+      "info2": "This blog uses a REST API with GET, POST, PUT, and DELETE routes via Express to dynamically manage articles and comments.",
+      "title3": "Face Detection",
+      "smallInfo3": "Clarifai Practice",
+      "info3": "This page uses the Clarifai API to automatically detect faces in uploaded images. A simplified authentication system is also implemented.",
+      "title4": "Authentication",
+      "smallInfo4": "SSR Authentication Practice",
+      "info4": "This page implements server-side authentication (SSR) with form validation. Passwords are encrypted using bcryptjs, and JWT tokens are used for session management, stored in secure cookies.",
+      "title5": "Trip to Kyoto",
+      "smallInfo5": "Landing Page Practice",
+      "info5": "My first responsive training website for desktop, tablet, and mobile.",
+      "voirDetails": "View details",
+      "retour": "Back",
+      "stacks": "Technologies used:"
+    }
+  },
+  "about": {
+    "header": {
+      "title1": "Nice to meet you,",
+      "title2": "I'm Iker Paillet",
+      "paragrapheSpan1": "Passionate",
+      "paragraphe1": " about front-end development, I have a rich and diverse professional background. With a French degree in industrial design (Bachelor's), I started my career in the aeronautical industry where I worked for two years. This experience allowed me to develop skills in technical design and ",
+      "paragrapheSpan2": "3D modeling",
+      "paragraphe2": "After this period, I discovered the world of music by becoming an accordion craftsman. This hands-on profession requires attention to ",
+      "paragrapheSpan3": "detail",
+      "paragraphe3": ", ",
+      "paragrapheSpan4": "patience",
+      "paragraphe4": " and the ability to solve complex problems in a ",
+      "paragrapheSpan5": "creative",
+      "paragraphe5": " way. However, my interest in digital technologies persisted, leading me to learn ",
+      "paragrapheSpan6": "self-taught",
+      "paragraphe6": " how to build applications using various programming languages. To deploy them, I trained in ",
+      "paragrapheSpan7": "front-end",
+      "paragraphe7": " and ",
+      "paragrapheSpan8": "back-end",
+      "paragraphe8": " development, although my main focus is front-end.",
+      "paragraphe9": "Today, I am looking to take on new challenges as a developer. My unique background allows me to bring ",
+      "paragrapheSpan9": "innovative ideas",
+      "paragraphe10": " and a rigorous approach to every project. I am excited to contribute to ",
+      "paragrapheSpan10": "challenging projects",
+      "paragraphe11": " and continue growing in this dynamic and ",
+      "paragrapheSpan11": "ever-evolving",
+      "discover-me": "You can find me here:",
+      "experiences": " years of experience"
+    },
+    "competences": {
+      "title": "Core skills:",
+      "title1": "Building dynamic user interfaces",
+      "title2": "Prototyping and design",
+      "title3": "Responsive design",
+      "title4": "Unit & automation testing",
+      "title5": "Backend development and server management",
+      "title6": "RESTful API development",
+      "title7": "Version control with Git",
+      "title8": "DOM manipulation",
+      "title9": "Front-end performance optimization",
+      "title10": "Search engine optimization (SEO)",
+      "title11": "Full-stack development",
+      "title12": "Database management",
+      "title13": "Security and authentication",
+      "title14": "Problem-solving and debugging"
+    },
+    "skill": {
+      "title": "Skills and knowledge to acquire:"
+    }
+  },
+  "navigation": {
+    "link1": "Home",
+    "link2": "About me",
+    "link3": "Contact"
+  },
+  "contact": {
+    "title": "CONTACT ME",
+    "subTitleSpan": "Interested in working together?",
+    "subTitle": "Fill out the form below with some details about your project and I will get back to you as soon as possible. Please allow a few days for a response.",
+    "form": {
+      "prenom": {
+        "placeholder": "Enter your first name...",
+        "required": "Required field",
+        "min": "Minimum 2 characters",
+        "max": "Maximum 10 characters"
+      },
+      "nom": {
+        "placeholder": "Enter your last name...",
+        "required": "Required field",
+        "min": "Minimum 2 characters",
+        "max": "Maximum 10 characters"
+      },
+      "email": {
+        "placeholder": "Enter your email...",
+        "required": "Required field",
+        "email": "Invalid email address"
+      },
+      "societe": {
+        "placeholder": "Enter your company... (optional)"
+      },
+      "message": {
+        "placeholder": "Write your message...",
+        "required": "Required field",
+        "min": "Minimum 10 characters"
+      }
+    }
+  },
+  "toast": {
+    "message": {
+      "loading": "Sending...",
+      "success": "Your message has been sent successfully",
+      "error": "Failed to send your message"
+    }
+  }
+}
