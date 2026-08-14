@@ -43,17 +43,21 @@ const Competences = () => {
                         <Competence info={t("about.competences.title5")} delay="0.4s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title6")} delay="0.5s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title7")} delay="0.6s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title8")} delay="0.7s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title9")} delay="0.8s" active={competencesEffect}/>
                     </div>
                 </LeftSection>
                 <RightSection>
                     <div>
-                        <Competence info={t("about.competences.title8")} delay="0.7s" active={competencesEffect}/>
-                        <Competence info={t("about.competences.title9")} delay="0.8s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title10")} delay="0.9s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title11")} delay="1s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title12")} delay="1.1s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title13")} delay="1.2s" active={competencesEffect}/>
                         <Competence info={t("about.competences.title14")} delay="1.3s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title15")} delay="1.4s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title16")} delay="1.5s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title17")} delay="1.6s" active={competencesEffect}/>
+                        <Competence info={t("about.competences.title18")} delay="1.7s" active={competencesEffect}/>
                     </div>
                 </RightSection>
             </FlexContainer>

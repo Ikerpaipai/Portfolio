@@ -30,6 +30,12 @@ import Ts from "../../assets/logo-dev/typescript_logo.svg?react"
 import Python from "../../assets/logo-dev/python.svg?react"
 import Goland from "../../assets/logo-dev/goland.svg?react"
 
+import GPT from "../../assets/logo-dev/gpt-icone.svg?react"
+import ClaudeCodeSVG from "../../assets/logo-dev/thesvg-color_claude-code.svg?react"
+import GeminiSVG from "../../assets/logo-dev/gemini.svg?react"
+import AgentSVG from "../../assets/logo-dev/agent-ia.svg?react"
+import N8N from "../../assets/logo-dev/thesvg-color_n8n.svg?react"
+
 import Git from "../../assets/logo-dev/git.svg?react"
 import Jira from "../../assets/logo-dev/jira.svg?react"
 import AWS from "../../assets/logo-dev/aws.svg?react"
@@ -46,13 +52,10 @@ const frontEnd = [
     {name: Tanstack, opacity: false, alt: "Tanstack"},
     {name: Redux, opacity: false, alt: "Redux"},
     {name: StyledComponentsLogo, opacity: false, alt: "Styled-Components"},
-    {name: VitestLogo, opacity: false, alt: "Vitest"},
-    {name: PlaywrightLogo, opacity: false, alt: "Playwright"},
-    {name: JestLogo, opacity: false, alt: "Jest"},
+    {name: TailwindLogo, opacity: false, alt: "Tailwind"},
     {name: AngularLogo, opacity: true, alt: "Angular"},
     {name: VueLogo, opacity: true, alt: "Vue"},
     {name: ApolloLogo, opacity: true, alt: "Apollo"},
-    {name: TailwindLogo, opacity: true, alt: "Tailwind"},
 ]
 
 const backEnd = [
@@ -61,9 +64,17 @@ const backEnd = [
     {name: Postgresql, opacity: false, alt: "PostgreSQL"},
     {name: Firebase, opacity: false, alt: "Firebase"},
     {name: Prisma, opacity: false, alt: "Prisma"},
+    {name: NextJs, opacity: false, alt: "NextJs"},
     {name: MongoDB, opacity: true, alt: "MongoDB"},
-    {name: NextJs, opacity: true, alt: "NextJs"},
     {name: Django, opacity: true, alt: "Django"},
+]
+
+const IATools = [
+    {name: GeminiSVG, opacity: false, alt: "Gemini"},
+    {name: ClaudeCodeSVG, opacity: false, alt: "Claude Code"},
+    {name: GPT, opacity: false, alt: "GPT"},
+    {name: AgentSVG, opacity: false, alt: "AI Agents"},
+    {name: N8N, opacity: true, alt: "n8n"},
 ]
 
 const progamming = [
@@ -73,10 +84,16 @@ const progamming = [
     {name: Goland, opacity: true, alt: "Goland"},
 ]
 
+const testing = [
+    {name: PlaywrightLogo, opacity: false, alt: "Playwright"},
+    {name: VitestLogo, opacity: false, alt: "Vitest"},
+    {name: JestLogo, opacity: false, alt: "Jest"},
+]
+
 const devOps = [
     {name: Git, opacity: false, alt: "Git"},
+    {name: Docker, opacity: false, alt: "Docker"},
     {name: Jira, opacity: true, alt: "Jira"},
-    {name: Docker, opacity: true, alt: "Docker"},
     {name: AWS, opacity: true, alt: "AWS"},
     {name: Kubernetes, opacity: true, alt: "Kubernetes"},
 ]
@@ -113,8 +130,10 @@ const SkillsSection = () => {
             <SkillsContainer>
                 <Skill title="Front-end" logo={frontEnd} delay="0s" active={competencesEffect}/>
                 <Skill title="Back-end" logo={backEnd} delay="0.4s" active={competencesEffect}/>
-                <Skill title="Programming Languages" logo={progamming} delay="0.6s" active={competencesEffect}/>
-                <Skill title="DevOps" logo={devOps} delay="0.2s" active={competencesEffect}/>
+                <Skill title="AI & Machine Learning" logo={IATools} delay="0.6s" active={competencesEffect}/>
+                <Skill title="Programming Languages" logo={progamming} delay="0.2s" active={competencesEffect}/>
+                <Skill title="Testing & Quality" logo={testing} delay="1s" active={competencesEffect}/>
+                <Skill title="DevOps & Tools" logo={devOps} delay="0.8s" active={competencesEffect}/>
             </SkillsContainer>
         </div>
     )

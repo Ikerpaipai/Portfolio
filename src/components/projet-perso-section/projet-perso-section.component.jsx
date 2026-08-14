@@ -6,6 +6,7 @@ import PulseCircle from "../pulse-circle/pulse-circle.component"
 import { useTranslation } from "react-i18next"
 
 import BlogImage from "../../assets/projet-perso/projet-blog.png"
+import AgentIAImage from "../../assets/projet-perso/projet-agent-ia-tools-calling.png"
 import CrownImage from "../../assets/projet-perso/projet-crown-clothes.png"
 import DetectImage from "../../assets/projet-perso/projet-detect-face.png"
 import AuthImage from "../../assets/projet-perso/projet-authentification.png"
@@ -84,6 +85,15 @@ const ProjetPersoSection = () => {
     const projetPerso = [
         {
             index: 1,
+            title: t("projetPerso.card.title6"),
+            smallInfo: t("projetPerso.card.smallInfo6"),
+            info: t("projetPerso.card.info6"),
+            stack:["Javascript", "NodeJs","Gemini", "Agent IA", "Tool Calling", "Tailwind","REST API", "Testing"],
+            image: AgentIAImage,
+            link: "https://github.com/Ikerpaipai/restaurant-recommendation-agent"
+        },
+        {
+            index: 2,
             title: t("projetPerso.card.title1"),
             smallInfo: t("projetPerso.card.smallInfo1"),
             info: t("projetPerso.card.info1"),
@@ -92,7 +102,7 @@ const ProjetPersoSection = () => {
             link: "https://665f6c9db58c8f3f19bc9007--crown-clothes-training.netlify.app/"
         },
         {
-            index: 2,
+            index: 3,
             title: t("projetPerso.card.title2"),
             smallInfo: t("projetPerso.card.smallInfo2"),
             info: t("projetPerso.card.info2"),
@@ -101,7 +111,7 @@ const ProjetPersoSection = () => {
             link: "https://github.com/Ikerpaipai/Blog"
         },
         {
-            index: 3,
+            index: 4,
             title: t("projetPerso.card.title3"),
             smallInfo: t("projetPerso.card.smallInfo3"),
             info: t("projetPerso.card.info3"),
@@ -110,7 +120,7 @@ const ProjetPersoSection = () => {
             link: "https://face-detect-exercise.netlify.app/"
         },
         {
-            index: 4,
+            index: 5,
             title: t("projetPerso.card.title4"),
             smallInfo: t("projetPerso.card.smallInfo4"),
             info: t("projetPerso.card.info4"),
@@ -119,7 +129,7 @@ const ProjetPersoSection = () => {
             link: "https://training-authentification.onrender.com"
         },
         {
-            index: 5,
+            index: 6,
             title: t("projetPerso.card.title5"),
             smallInfo: t("projetPerso.card.smallInfo5"),
             info: t("projetPerso.card.info5"),

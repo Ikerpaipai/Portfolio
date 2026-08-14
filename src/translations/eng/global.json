@@ -47,6 +47,13 @@
     "infoDetails2": [
       "End-to-end e-commerce website built without code using a SaaS platform, including SEO implementation, product updates, and analytics tools."
     ],
+    "title3": "AI CV Analyzer & Job Matcher",
+    "info3": [
+      "AI-powered platform that helps candidates analyze their profile, discover relevant job opportunities, and prioritize applications based on their skills and experience."
+    ],
+    "infoDetails3": [
+      "Built a full-stack AI matching system with React and NestJS. CVs are analyzed with Google Gemini to extract structured candidate profiles, while job offers are processed into embeddings and stored in PostgreSQL with pgvector. A custom scoring engine combines semantic similarity, skills, experience, and job-title compatibility to rank opportunities, with Gemini further analyzing the highest-ranked offers to refine the matching."
+    ],
     "precedent": "Previous",
     "suivant": "Next",
     "stacksPrincipales": "Main technologies:",
@@ -73,6 +80,9 @@
       "title5": "Trip to Kyoto",
       "smallInfo5": "Landing Page Practice",
       "info5": "My first responsive training website for desktop, tablet, and mobile.",
+      "title6": "AI Agent",
+      "smallInfo6": "Tool-Calling AI Agent",
+      "info6": "This project implements an AI agent that uses Google Gemini with external tools for weather forecasts and restaurant recommendations. The agent determines which tool to call based on the user's request, retrieves the relevant data, and uses it to generate a contextual response.",
       "voirDetails": "View details",
       "retour": "Back",
       "stacks": "Technologies used:"
@@ -108,21 +118,25 @@
       "experiences": " years of experience"
     },
     "competences": {
-      "title": "Core skills:",
-      "title1": "Building dynamic user interfaces",
-      "title2": "Prototyping and design",
-      "title3": "Responsive design",
-      "title4": "Unit & automation testing",
-      "title5": "Backend development and server management",
-      "title6": "RESTful API development",
-      "title7": "Version control with Git",
-      "title8": "DOM manipulation",
-      "title9": "Front-end performance optimization",
-      "title10": "Search engine optimization (SEO)",
-      "title11": "Full-stack development",
-      "title12": "Database management",
-      "title13": "Security and authentication",
-      "title14": "Problem-solving and debugging"
+      "title": "Areas of Expertise:",
+      "title1": "Full-Stack Development",
+      "title2": "Dynamic User Interface Development",
+      "title3": "Responsive Design",
+      "title4": "Prototyping and UI Design",
+      "title5": "Backend Development and Server Management",
+      "title6": "RESTful API Development",
+      "title7": "AI Solution Integration",
+      "title8": "Large Language Model (LLM) Integration",
+      "title9": "AI Agents and Tool Calling",
+      "title10": "Embeddings and Semantic Search",
+      "title11": "AI-Powered Data Processing and Extraction",
+      "title12": "AI APIs and External Services Integration",
+      "title13": "Database Management",
+      "title14": "Security and Authentication",
+      "title15": "Unit and Automated Testing",
+      "title16": "Front-End Performance Optimization",
+      "title17": "Version Control with Git",
+      "title18": "Problem Solving and Troubleshooting"
     },
     "skill": {
       "title": "Skills and knowledge to acquire:"

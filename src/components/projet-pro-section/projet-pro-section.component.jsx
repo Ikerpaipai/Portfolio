@@ -5,7 +5,8 @@ import PulseCircle from "../pulse-circle/pulse-circle.component";
 import { ModeContext } from "../../contexts/toggle-mode.context";
 import { useTranslation } from "react-i18next";
 
-import ClicmusicImage from "../../assets/projet-pro/clicmusic.png"
+import CVAnalizer from '../../assets/projet-pro/CV-analizer-AI.png'
+// import ClicmusicImage from "../../assets/projet-pro/clicmusic.png"
 import PiginiArticle from "../../assets/projet-pro/pigini-principale.png"
 import PiginiPanier from "../../assets/projet-pro/pigini-panier.png"
 import PiginiFavory from "../../assets/projet-pro/pigini-favory.png"
@@ -165,12 +166,12 @@ const ProjetProSection = () => {
                         <ProjetContainer className={classActive.project2 ? "active" : ""} $reverse>
                             <ProjetPro
                                 reverse
-                                title={t("projetPro.title2")}
-                                info={t('projetPro.info2', { returnObjects: true })}
-                                tag={["Oxatis", "Shop application", "SEO", "Analytics"]}
-                                image={[ClicmusicImage]}
-                                infoDetails={t('projetPro.infoDetails2', { returnObjects: true })}
-                                tagFirst={["Oxatis", "Shop application", "SEO", "Analytics"]}
+                                title={t("projetPro.title3")}
+                                info={t('projetPro.info3', { returnObjects: true })}
+                                tag={["AI Agent", "Gemini", "Embeddings", "Vector Search"]}
+                                image={[CVAnalizer]}
+                                infoDetails={t('projetPro.infoDetails3', { returnObjects: true })}
+                                tagFirst={["AI Agent", "Gemini", "Embeddings", "Vector Search", "React", "TypeScript", "Tailwind CSS", "NestJS", "Prisma", "PostgreSQL", "pgvector", "REST API"]}
                             />
                         </ProjetContainer>
                     }

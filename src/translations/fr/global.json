@@ -39,6 +39,13 @@
             "Mise en place du SEO, actualisation des articles, outils d'analyses"
         ],
         "infoDetails2": ["Web e-commerce développée de A-Z en noCode à partir d'un Saas. Mise en place du SEO, actualisation des articles, outils d'analyses"],
+        "title3": "AI CV Analyzer & Job Matcher",
+        "info3": [
+        "Plateforme propulsée par l'IA permettant aux candidats d'analyser leur profil, de découvrir les offres pertinentes et de prioriser leurs candidatures selon leurs compétences et leur expérience."
+        ],
+        "infoDetails3": [
+        "Développement d'un système de matching IA full-stack avec React et NestJS. Les CV sont analysés avec Google Gemini pour extraire les profils structurés, tandis que les offres sont transformées en embeddings et stockées dans PostgreSQL avec pgvector. Un moteur de scoring combine similarité sémantique, compétences, expérience et compatibilité du titre, puis Gemini analyse les offres les mieux classées pour affiner le matching."
+        ],
         "precedent": "Précédent",
         "suivant": "Suivant",
         "stacksPrincipales": "Technologies principales :",
@@ -65,6 +72,9 @@
             "title5": "Voyage à Kyoto",
             "smallInfo5": "Entraînement page d'accueil",
             "info5": "Mon premier site d'entrainement responsive pour ordinateurs, tablettes et smartphones",
+            "title6": "Agent IA",
+            "smallInfo6": "Agent IA avec Tool Calling",
+            "info6": "Ce projet implémente un agent IA utilisant Google Gemini avec des outils externes pour consulter la météo et rechercher des restaurants. L'agent détermine quel outil utiliser en fonction de la demande de l'utilisateur, récupère les données pertinentes et les utilise pour générer une réponse contextuelle.",
             "voirDetails": "Voir détails",
             "retour": "Retour",
             "stacks": "Stack utilisée :"
@@ -101,20 +111,24 @@
         },
         "competences": {
             "title": "Domaines de compétences :",
-            "title1": "Création d'interfaces utilisateurs dynamiques",
-            "title2": "Prototypage et conception",
+            "title1": "Développement Full Stack",
+            "title2": "Création d'interfaces utilisateurs dynamiques",
             "title3": "Responsive Design",
-            "title4": "Réalisation de tests unitaires & automatisés",
+            "title4": "Prototypage et conception",
             "title5": "Développement et gestion de serveurs backend",
             "title6": "Développement d'API RESTful",
-            "title7": "Gestion de version avec Git",
-            "title8": "Manipulation du DOM",
-            "title9": "Optimisation des performances Front-End",
-            "title10": "Optimisation pour les moteurs de recherche",
-            "title11": "Développement Full Stack",
-            "title12": "Utilisation et gestion de bases de données",
-            "title13": "Sécurité et authentification",
-            "title14": "Résolution de problèmes et dépannage"
+            "title7": "Intégration de solutions d'intelligence artificielle",
+            "title8": "Intégration de modèles de langage (LLM)",
+            "title9": "Création d'agents IA et Tool Calling",
+            "title10": "Embeddings et recherche sémantique",
+            "title11": "Traitement et extraction de données avec l'IA",
+            "title12": "Utilisation d'APIs et services IA",
+            "title13": "Utilisation et gestion de bases de données",
+            "title14": "Sécurité et authentification",
+            "title15": "Tests unitaires et automatisés",
+            "title16": "Optimisation des performances Front-End",
+            "title17": "Gestion de version avec Git",
+            "title18": "Résolution de problèmes et dépannage"
         },
         "skill": {
             "title": "Skills et Connaissances à acquérir :"
